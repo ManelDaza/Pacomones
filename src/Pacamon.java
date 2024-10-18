@@ -30,7 +30,7 @@ public class Pacamon {
         this.ps = ps;
         this.ataque = ataque;
         this. defensa = defensa;
-        this.vel;
+        this.vel = vel;
     }
     
     //metodos

@@ -29,10 +29,27 @@ public class JavaClassesTutorial {
         name = scan.nextLine();
         System.out.println("Encantado de conocerte " + name + " Espero que estes listo para esta corta aventura!");
         System.out.println("Ahora a llegado el momento al que has estado esperando, ESCOJE TU PACOMON! ");
+        int piker = 0;
+        String pacoA = "";
+        boolean escojido = false;
+        do{
+            System.out.println("SELECIONA 1: " + p1.nombre);
+            System.out.println("SELECIONA 2: " + p2.nombre);
+            System.out.println("SELECIONA 3: " + p3.nombre);
+            
+            piker = scan.nextInt();
+            if(piker == 1){
+                pacoA = p1.nombre;
+                escojido = true;
+            }else if(piker == 2){
+                pacoA = p2.nombre;
+                escojido = true;
+            } else{
+                pacoA = p3.nombre;
+                escojido = true;
+            }
+        }while(escojido == false);
+        System.out.println("Henorabuena! has selecionado a " + pacoA);
         
-        
-        System.out.println("SELECIONA 1: " + p1.nombre);
-        System.out.println("SELECIONA 2: " + p2.nombre);
-        System.out.println("SELECIONA 3: " + p3.nombre);
     }
 }
